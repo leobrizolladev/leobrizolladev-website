@@ -9,13 +9,27 @@ Este arquivo contém os comandos essenciais para desenvolvimento com Claude Code
 pnpm dev
 
 # Build
-pnpm build  
+pnpm build
 
-# Lint
+# Testes
+pnpm test
+pnpm test:watch
+pnpm test:coverage
+
+# Linting e formatação
 pnpm lint
+pnpm lint:fix
+pnpm format
+pnpm format:check
 
-# Typecheck
-npx tsc --noEmit
+# Type checking
+pnpm type-check
+
+# Commits convencionais
+pnpm commit
+
+# Histórico de mudanças
+node scripts/update-history.js  # Atualizar histórico manualmente
 ```
 
 ## Estrutura do Projeto
@@ -23,6 +37,8 @@ npx tsc --noEmit
 - `src/app/` - App Router do Next.js 15
 - `src/components/` - Componentes reutilizáveis
 - `public/` - Arquivos estáticos
+- `scripts/` - Scripts utilitários
+- `HISTORY.md` - Histórico de mudanças do projeto
 - `package.json` - Dependências e scripts
 
 ## Dependências Principais

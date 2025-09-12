@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Atualizar o histórico após cada commit
+node scripts/update-history.js
