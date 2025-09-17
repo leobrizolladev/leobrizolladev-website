@@ -1,13 +1,12 @@
 import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import Home from '../page';
 
 describe('Home Page', () => {
   it('renders the main heading', () => {
     render(<Home />);
 
-    const heading = screen.getByRole('heading', {
-      name: /next\.js \+ claude code/i,
-    });
+    const heading = screen.getByText('Léo Brizolla Dev');
 
     expect(heading).toBeInTheDocument();
   });
@@ -15,9 +14,7 @@ describe('Home Page', () => {
   it('renders the subtitle', () => {
     render(<Home />);
 
-    const subtitle = screen.getByText(
-      /projeto limpo e pronto para desenvolvimento/i
-    );
+    const subtitle = screen.getByText(/Projetos/i);
 
     expect(subtitle).toBeInTheDocument();
   });
