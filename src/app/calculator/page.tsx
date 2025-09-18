@@ -1,4 +1,3 @@
-import Button from '@/components/button';
 import Text from '@/components/text';
 
 export function Calculator() {
@@ -7,9 +6,6 @@ export function Calculator() {
       <Text as="h1" className="text-center">
         Em construção...
       </Text>
-      <Button disabled variant="default">
-        Calcular
-      </Button>
     </div>
   );
 }

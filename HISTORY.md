@@ -2,6 +2,23 @@
 
 Este arquivo mantém um registro de todas as mudanças relevantes do projeto.
 
+## 2025-09-18
+
+### TEST: feat(component): add new component button
+
+**Commit:** 74e8aaa | **Author:** leobrizolladev
+
+**Arquivos alterados:**
+
+- CLAUDE.md
+- src/app/calculator/page.tsx
+- src/components/button/**tests**/index.test.tsx
+- src/components/button/index.tsx
+- src/components/text/**tests**/index.test.tsx
+- src/components/text/index.tsx
+
+---
+
 ## 2025-09-17
 
 ### TEST: feat(page): add new page Calculator
