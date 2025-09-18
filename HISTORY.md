@@ -2,6 +2,23 @@
 
 Este arquivo mantém um registro de todas as mudanças relevantes do projeto.
 
+## 2025-09-17
+
+### TEST: feat(page): add new page Calculator
+
+**Commit:** 304ca5b | **Author:** leobrizolladev
+
+**Arquivos alterados:**
+
+- src/app/**tests**/page.test.tsx
+- src/app/calculator/page.tsx
+- src/app/globals.css
+- src/app/layout.tsx
+- src/app/page.tsx
+- src/components/text/index.tsx
+
+---
+
 ## 2025-09-12
 
 ### OTHER: fix(lint): resolve linting in update-history script
