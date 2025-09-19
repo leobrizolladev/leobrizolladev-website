@@ -4,6 +4,21 @@ Este arquivo mantém um registro de todas as mudanças relevantes do projeto.
 
 ## 2025-09-18
 
+### TEST: feat(component): add new component card
+
+**Commit:** 4f4009e | **Author:** leobrizolladev
+
+**Arquivos alterados:**
+
+- src/app/calculator/page.tsx
+- src/components/button/index.tsx
+- src/components/card/**tests**/index.test.tsx
+- src/components/card/index.tsx
+
+---
+
+## 2025-09-18
+
 ### TEST: feat(component): add new component button
 
 **Commit:** 74e8aaa | **Author:** leobrizolladev

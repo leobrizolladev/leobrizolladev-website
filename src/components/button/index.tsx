@@ -25,10 +25,10 @@ export default function Button({
     <Text
       as="button"
       variant={'heading'}
-      className={`flex items-center  rounded-xl
+      className={`flex items-center rounded-xl
         p-3 cursor-pointer text-{--text-calculator}
         bg-linear-(--gradient-calculator) hover:bg-linear-(--gradient-hover-calculator)
-        shadow-(--shadow-calculator)
+        shadow-(--shadow-calculator) items-center justify-center
         ${buttonVariants[variant]}
         ${className ?? ''}
         `}
