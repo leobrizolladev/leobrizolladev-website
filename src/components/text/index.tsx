@@ -10,7 +10,8 @@ type TextAs =
   | 'h4'
   | 'h5'
   | 'h6'
-  | 'button';
+  | 'button'
+  | 'li';
 
 interface TextPropsBase extends React.HTMLAttributes<HTMLElement> {
   as?: TextAs;
@@ -31,7 +32,7 @@ export default function Text({
   const textVarians = {
     default: 'text-xl',
     muted: 'text-xl text-(--text-secondary-calculator)',
-    heading: 'text-xl-2xl',
+    heading: 'text-2xl',
     blast: 'text-3xl',
   };
 

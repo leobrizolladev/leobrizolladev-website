@@ -1,10 +1,11 @@
 import Button from '@/components/button';
 import CalculatorDisplay from '@/components/calculator-display';
 import Card from '@/components/card';
+import OperationHistory from '@/components/operation-history';
 
 export function Calculator() {
   return (
-    <div className="min-h-screen bg-background text-foreground font-sans-calculator flex items-center justify-center">
+    <div className="flex flex-col sm:flex-row items-center sm:items-stretch gap-2 justify-center py-28 px-4 sm:px-10">
       <Card
         className={`flex flex-col gap-[1.165rem] w-[22.25rem] pt-14 px-8 pb-8`}
       >
@@ -55,6 +56,7 @@ export function Calculator() {
           </div>
         </div>
       </Card>
+      <OperationHistory />
     </div>
   );
 }

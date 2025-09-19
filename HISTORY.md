@@ -2,6 +2,21 @@
 
 Este arquivo mantém um registro de todas as mudanças relevantes do projeto.
 
+## 2025-09-19
+
+### TEST: feat(component): add new component display-calculator
+
+**Commit:** 105e474 | **Author:** leobrizolladev
+
+**Arquivos alterados:**
+
+- src/app/calculator/page.tsx
+- src/components/button/index.tsx
+- src/components/calculator-display/**tests**/index.test.tsx
+- src/components/calculator-display/index.tsx
+
+---
+
 ## 2025-09-18
 
 ### TEST: feat(component): add new component card

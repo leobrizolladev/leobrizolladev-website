@@ -41,7 +41,7 @@ describe('Text Component', () => {
 
     const text = screen.getByText('Heading Text');
 
-    expect(text).toHaveClass('text-xl-2xl');
+    expect(text).toHaveClass('text-2xl');
   });
 
   it('applies blast variant classes', () => {
