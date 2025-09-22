@@ -1,7 +1,13 @@
+'use client';
+
+import { CalculatorContext } from '@/context/calculator-context';
+import { useContext } from 'react';
 import Card from '../card';
 import Text from '../text';
 
-export default function OperationHistory() {
+export function OperationHistory() {
+  const { history } = useContext(CalculatorContext);
+
   return (
     <Card
       className={`w-full py-10 px-8 sm:max-w-2xl`}
@@ -15,17 +21,31 @@ export default function OperationHistory() {
       >
         Histórico de Operações
       </Text>
-
-      <ul
-        className={`flex flex-col gap-3`}
-        data-testid="operation-history-list"
-      >
-        <Text as="li" data-testid="operation-history-item">
-          1 + 1 = 2
+      {history.length > 0 ? (
+        <ul
+          className={`flex flex-col gap-3`}
+          data-testid="operation-history-list"
+        >
+          {history?.map((item, index) => (
+            <Text
+              as="li"
+              key={`history-item-${index}-${item?.length}`}
+              data-testid="operation-history-item"
+            >
+              {item}
+            </Text>
+          ))}
+        </ul>
+      ) : (
+        <Text
+          as="p"
+          variant="muted"
+          key={`history-item-empty`}
+          data-testid="operation-history-empty"
+        >
+          Nenhuma operação realizada
         </Text>
-        <Text as="li">2 + 3 + 1 = 6</Text>
-        <Text as="li">2 + 3 = 5</Text>
-      </ul>
+      )}
     </Card>
   );
 }

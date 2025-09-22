@@ -3,13 +3,8 @@ import { render, screen } from '@testing-library/react';
 import CalculatorDisplay from '../index';
 
 describe('CalculatorDisplay Component', () => {
-  // TODO(human): Implement comprehensive tests for CalculatorDisplay component
-  // Test cases to implement:
-  // 4. Test with various operator and result combinations
-  // Use the test-ids: calculator-display, calculator-operator, calculator-equals, calculator-result
-
-  it('renders operator and result correctly', () => {
-    render(<CalculatorDisplay operator="5 + 3" result="8" />);
+  it('renders operation and result correctly', () => {
+    render(<CalculatorDisplay operation="5 + 3" result="8" />);
 
     expect(screen.getByTestId('calculator-operator')).toHaveTextContent(
       '5 + 3'
@@ -18,14 +13,14 @@ describe('CalculatorDisplay Component', () => {
   });
 
   it('renders empty operator and result correctly', () => {
-    render(<CalculatorDisplay operator="" result="" />);
+    render(<CalculatorDisplay operation="" result="" />);
 
     expect(screen.getByTestId('calculator-operator')).toHaveTextContent('');
     expect(screen.getByTestId('calculator-result')).toHaveTextContent('');
   });
 
   it('renders component structure correctly', () => {
-    render(<CalculatorDisplay operator="5 + 3" result="8" />);
+    render(<CalculatorDisplay operation="5 + 3" result="8" />);
 
     expect(screen.getByTestId('calculator-display')).toBeInTheDocument();
     expect(screen.getByTestId('calculator-operator')).toBeInTheDocument();
@@ -44,7 +39,7 @@ describe('CalculatorDisplay Component', () => {
     testCases.forEach(({ operator, result }) => {
       document.body.innerHTML = '';
 
-      render(<CalculatorDisplay operator={operator} result={result} />);
+      render(<CalculatorDisplay operation={operator} result={result} />);
 
       expect(screen.getByTestId('calculator-operator')).toHaveTextContent(
         operator

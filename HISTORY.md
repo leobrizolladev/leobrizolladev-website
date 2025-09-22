@@ -2,6 +2,20 @@
 
 Este arquivo mantém um registro de todas as mudanças relevantes do projeto.
 
+## 2025-09-22
+
+### OTHER: feat(component): enchance calculator functionality and update display logic
+
+**Commit:** 2861b4a | **Author:** leobrizolladev
+
+**Arquivos alterados:**
+
+- src/app/calculator/page.tsx
+- src/components/button/index.tsx
+- src/components/calculator-display/index.tsx
+
+---
+
 ## 2025-09-19
 
 ### TEST: feat(component): add new component operation history
