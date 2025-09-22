@@ -1,14 +1,14 @@
 import Text from '../text';
 
 interface CalculatorDisplayBase {
-  operator: string;
+  operation: string;
   result: string;
 }
 
 type CalculatorDisplayProps = Readonly<CalculatorDisplayBase>;
 
 export default function CalculatorDisplay({
-  operator,
+  operation,
   result,
 }: CalculatorDisplayProps) {
   return (
@@ -19,17 +19,17 @@ export default function CalculatorDisplay({
       <Text
         as="div"
         variant="muted"
-        className={`flex items-center justify-end`}
+        className={`flex items-center justify-end h-7`}
         data-testid="calculator-operator"
       >
-        {operator}
+        {result && operation}
       </Text>
-      <div className={`flex items-center justify-between`}>
+      <div className={`flex items-center justify-between h-9`}>
         <Text variant="muted" data-testid="calculator-equals">
           =
         </Text>
         <Text variant="blast" data-testid="calculator-result">
-          {result}
+          {result || operation}
         </Text>
       </div>
     </div>

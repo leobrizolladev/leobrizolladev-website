@@ -4,6 +4,22 @@ Este arquivo mantém um registro de todas as mudanças relevantes do projeto.
 
 ## 2025-09-19
 
+### TEST: feat(component): add new component operation history
+
+**Commit:** 912e0cf | **Author:** leobrizolladev
+
+**Arquivos alterados:**
+
+- src/app/calculator/page.tsx
+- src/components/operation-history/**tests**/index.test.tsx
+- src/components/operation-history/index.tsx
+- src/components/text/**tests**/index.test.tsx
+- src/components/text/index.tsx
+
+---
+
+## 2025-09-19
+
 ### TEST: feat(component): add new component display-calculator
 
 **Commit:** 105e474 | **Author:** leobrizolladev
