@@ -34,6 +34,21 @@
     0px 2px 3px 0px rgba(255, 255, 255, 0.06) inset;
 
   --font-sans-calculator: 'Rubik', sans-serif;
+
+  /* TodoList Theme */
+  --color-white-todo: #ffffff;
+  --color-gray-100-todo: #f7f3f6;
+  --color-gray-200-todo: #f4e6f0;
+  --color-gray-300-todo: #7a6e76;
+  --color-gray-400-todo: #332e32;
+  --color-green-light-todo: #cddfcc;
+  --color-green-base-todo: #52a350;
+  --color-green-dark-todo: #2f5c2d;
+  --color-pink-light-todo: #e9cce1;
+  --color-pink-base-todo: #c257a4;
+  --color-pink-dark-todo: #884074;
+  --font-sans-todo: 'Cairo', sans-serif;
+  --shadow-sm-todo: 0px 4px 8px 0px rgba (54, 23, 45, 0.05);
 }
 
 @media (prefers-color-scheme: dark) {

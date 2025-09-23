@@ -4,6 +4,27 @@ Este arquivo mantém um registro de todas as mudanças relevantes do projeto.
 
 ## 2025-09-22
 
+### FEAT: feat: implement Calculator Component with tests and context integration
+
+**Commit:** 8f8841b | **Author:** leobrizolladev
+
+**Arquivos alterados:**
+
+- src/app/calculator/page.tsx
+- src/components/calculator-component/**tests**/index.test.tsx
+- src/components/calculator-component/index.tsx
+- src/components/calculator-display/**tests**/index.test.tsx
+- src/components/operation-history/**tests**/index.test.tsx
+- src/components/operation-history/index.tsx
+- src/context/calculator-context/**tests**/index.test.tsx
+- src/context/calculator-context/index.tsx
+- src/hooks/useCalculator/**tests**/index.test.tsx
+- src/hooks/useCalculator/index.tsx
+
+---
+
+## 2025-09-22
+
 ### OTHER: feat(component): enchance calculator functionality and update display logic
 
 **Commit:** 2861b4a | **Author:** leobrizolladev
