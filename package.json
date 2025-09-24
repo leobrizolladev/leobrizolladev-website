@@ -26,7 +26,6 @@
   "engines": {
     "node": ">=20"
   },
-  "packageManager": "pnpm@10.16.0",
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
