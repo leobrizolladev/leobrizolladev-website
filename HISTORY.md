@@ -4,6 +4,20 @@ Este arquivo mantém um registro de todas as mudanças relevantes do projeto.
 
 ## 2025-09-24
 
+### FIX: fix: configure Vercel deployment with pnpm v9 compatibility
+
+**Commit:** fd21c9a | **Author:** leobrizolladev
+
+**Arquivos alterados:**
+
+- .nvmrc
+- package.json
+- vercel.json
+
+---
+
+## 2025-09-24
+
 ### FIX: fix: install dependencies in Vercel
 
 **Commit:** 3646913 | **Author:** leobrizolladev
