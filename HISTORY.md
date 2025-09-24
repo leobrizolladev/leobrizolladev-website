@@ -4,6 +4,18 @@ Este arquivo mantém um registro de todas as mudanças relevantes do projeto.
 
 ## 2025-09-24
 
+### OTHER: fix(fix lock pnpm): lock
+
+**Commit:** d70b891 | **Author:** leobrizolladev
+
+**Arquivos alterados:**
+
+- pnpm-lock.yaml
+
+---
+
+## 2025-09-24
+
 ### DOCS: docs: new doc
 
 **Commit:** 77e7e8a | **Author:** leobrizolladev
