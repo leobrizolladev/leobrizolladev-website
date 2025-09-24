@@ -4,6 +4,18 @@ Este arquivo mantém um registro de todas as mudanças relevantes do projeto.
 
 ## 2025-09-24
 
+### DOCS: docs: new doc
+
+**Commit:** 77e7e8a | **Author:** leobrizolladev
+
+**Arquivos alterados:**
+
+- README.md
+
+---
+
+## 2025-09-24
+
 ### FIX: fix: configure Vercel deployment with pnpm v9 compatibility
 
 **Commit:** fd21c9a | **Author:** leobrizolladev
