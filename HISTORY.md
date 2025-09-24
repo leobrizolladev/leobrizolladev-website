@@ -2,6 +2,51 @@
 
 Este arquivo mantém um registro de todas as mudanças relevantes do projeto.
 
+## 2025-09-24
+
+### FEAT: feat: add new components and features for list tasks
+
+**Commit:** 0feb862 | **Author:** leobrizolladev
+
+**Arquivos alterados:**
+
+- eslint.config.mjs
+- next.config.ts
+- package.json
+- pnpm-lock.yaml
+- pnpm-workspace.yaml
+- src/app/layout.tsx
+- src/app/page.tsx
+- src/app/todo-list/componentes/page.tsx
+- src/app/todo-list/layout.tsx
+- src/app/todo-list/page.tsx
+- src/assets/icons/check.svg
+- src/assets/icons/pencil.svg
+- src/assets/icons/plus.svg
+- src/assets/icons/trash.svg
+- src/assets/icons/x.svg
+- src/assets/images/logo.svg
+- src/components/todo-list/badge/index.tsx
+- src/components/todo-list/button-icon/index.tsx
+- src/components/todo-list/button/index.tsx
+- src/components/todo-list/card/index.tsx
+- src/components/todo-list/container/index.tsx
+- src/components/todo-list/icon/index.tsx
+- src/components/todo-list/input-checkbox/index.tsx
+- src/components/todo-list/input-text/index.tsx
+- src/components/todo-list/skeleton/index.tsx
+- src/components/todo-list/text/index.tsx
+- src/core-components/task-item/index.tsx
+- src/core-components/tasks-list/index.tsx
+- src/core-components/tasks-summary/index.tsx
+- src/core-components/todo-list/footer/index.tsx
+- src/core-components/todo-list/header/index.tsx
+- src/core-components/todo-list/main-content/index.tsx
+- svgr.d.ts
+- tsconfig.json
+
+---
+
 ## 2025-09-23
 
 ### FEAT: feat: add new SVG icons for application
