@@ -4,6 +4,18 @@ Este arquivo mantém um registro de todas as mudanças relevantes do projeto.
 
 ## 2025-09-24
 
+### FIX: fix: install dependencies in Vercel
+
+**Commit:** 3646913 | **Author:** leobrizolladev
+
+**Arquivos alterados:**
+
+- pnpm-lock.yaml
+
+---
+
+## 2025-09-24
+
 ### FEAT: feat: add new components and features for list tasks
 
 **Commit:** 0feb862 | **Author:** leobrizolladev
