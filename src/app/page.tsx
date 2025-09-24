@@ -9,10 +9,13 @@ export default function Home() {
         </h1>
         <p className="text-xl text-center text-muted-foreground">Projetos</p>
         <Link
-          className="mt-4 px-4 py-2 bg-primary text-white rounded"
+          className="mt-4 px-4 py-2 bg-primary rounded"
           href={'/calculator'}
         >
           Calculadora
+        </Link>
+        <Link className="mt-4 px-4 py-2 bg-primaryrounded" href={'/todo-list'}>
+          Todo List
         </Link>
       </main>
     </div>

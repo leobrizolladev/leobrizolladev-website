@@ -2,6 +2,25 @@
 
 Este arquivo mantém um registro de todas as mudanças relevantes do projeto.
 
+## 2025-09-23
+
+### FEAT: feat: add new SVG icons for application
+
+**Commit:** 375e2fd | **Author:** leobrizolladev
+
+**Arquivos alterados:**
+
+- src/app/globals.css
+- src/assets/icons/check.svg
+- src/assets/icons/pencil.svg
+- src/assets/icons/plus.svg
+- src/assets/icons/spinner.svg
+- src/assets/icons/trash.svg
+- src/assets/icons/x.svg
+- src/assets/images/logo.svg
+
+---
+
 ## 2025-09-22
 
 ### FEAT: feat: implement Calculator Component with tests and context integration
