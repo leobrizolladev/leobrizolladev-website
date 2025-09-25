@@ -21,7 +21,8 @@
     "class-variance-authority": "^0.7.1",
     "next": "15.5.3",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "use-local-storage": "^3.0.0"
   },
   "engines": {
     "node": ">=20"

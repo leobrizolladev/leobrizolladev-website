@@ -4,6 +4,20 @@ Este arquivo mantém um registro de todas as mudanças relevantes do projeto.
 
 ## 2025-09-24
 
+### CHORE: fix(pnpm): new build
+
+**Commit:** 304ab28 | **Author:** leobrizolladev
+
+**Arquivos alterados:**
+
+- package.json
+- pnpm-lock.yaml
+- vercel.json
+
+---
+
+## 2025-09-24
+
 ### CHORE: fix(pnpm): fix version
 
 **Commit:** a6da0a8 | **Author:** leobrizolladev

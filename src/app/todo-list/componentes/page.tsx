@@ -37,6 +37,9 @@ export default function TodoList() {
 
         <div>
           <Button icon={PlusIcon}>Nova Tarefa</Button>
+          <Button icon={PlusIcon} handling>
+            Criando...
+          </Button>
         </div>
 
         <hr />
@@ -46,6 +49,7 @@ export default function TodoList() {
           <ButtonIcon icon={TrashIcon} variant={'secondary'} />
           <ButtonIcon icon={TrashIcon} variant={'tertiary'} />
           <ButtonIcon icon={TrashIcon} loading />
+          <ButtonIcon icon={TrashIcon} handling />
         </div>
 
         <hr />
