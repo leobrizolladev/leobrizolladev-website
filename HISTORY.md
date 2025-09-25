@@ -2,6 +2,29 @@
 
 Este arquivo mantém um registro de todas as mudanças relevantes do projeto.
 
+## 2025-09-25
+
+### FEAT: feat: add management of tasks with hooks and improvements in the interface
+
+**Commit:** f230fe2 | **Author:** leobrizolladev
+
+**Arquivos alterados:**
+
+- package.json
+- pnpm-lock.yaml
+- src/app/todo-list/componentes/page.tsx
+- src/components/todo-list/button-icon/index.tsx
+- src/components/todo-list/button/index.tsx
+- src/core-components/task-item/index.tsx
+- src/core-components/tasks-list/index.tsx
+- src/core-components/tasks-summary/index.tsx
+- src/helpers/utils/index.ts
+- src/hooks/use-task/index.ts
+- src/hooks/use-tasks/index.ts
+- src/models/task/index.ts
+
+---
+
 ## 2025-09-24
 
 ### CHORE: fix(pnpm): new build

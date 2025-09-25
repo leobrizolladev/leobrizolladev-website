@@ -14,19 +14,19 @@ Projeto Next.js limpo e configurado para desenvolvimento com Claude Code.
 
 ```bash
 # Instalar dependências
-pnpm install
+npm install
 
 # Servidor de desenvolvimento
-pnpm dev
+npm run dev
 
 # Build para produção
-pnpm build
+npm run build
 
 # Iniciar servidor de produção
-pnpm start
+npm start
 
 # Lint do código
-pnpm lint
+npm run lint
 ```
 
 ## Estrutura do Projeto :D
