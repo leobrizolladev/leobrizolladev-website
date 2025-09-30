@@ -1,21 +1,38 @@
-import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import { render, screen } from '@testing-library/react';
+
+jest.mock('@vercel/analytics', () => ({ track: jest.fn() }));
+
 import Home from '../page';
 
 describe('Home Page', () => {
-  it('renders the main heading', () => {
+  it('renderiza headline principal e CTA', () => {
     render(<Home />);
 
-    const heading = screen.getByText('Léo Brizolla Dev');
+    expect(
+      screen.getByRole('heading', {
+        level: 1,
+        name: /construo experiências web com cuidado artesanal/i,
+      })
+    ).toBeInTheDocument();
 
-    expect(heading).toBeInTheDocument();
+    expect(
+      screen.getByRole('link', { name: /ver projetos em destaque/i })
+    ).toBeInTheDocument();
   });
 
-  it('renders the subtitle', () => {
+  it('exibe métricas e seções principais', () => {
     render(<Home />);
 
-    const subtitle = screen.getByText(/Projetos/i);
-
-    expect(subtitle).toBeInTheDocument();
+    expect(screen.getByText(/Anos de código/i)).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', {
+        level: 2,
+        name: /Tecnologia com propósito/i,
+      })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { level: 2, name: /Ferramentas que domino/i })
+    ).toBeInTheDocument();
   });
 });

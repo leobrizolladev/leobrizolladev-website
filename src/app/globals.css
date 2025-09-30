@@ -1,67 +1,143 @@
 @import 'tailwindcss';
 
 :root {
-  --background: #ffffff;
-  --foreground: #0a0a0a;
-  --muted-foreground: #6b7280;
-  --border: #e5e7eb;
-  --ring: #3b82f6;
+  --background: #04020b;
+  --foreground: #f8f9ff;
+  --muted: #6d6f87;
+  --muted-foreground: #adb1d5;
+  --border: #1a1b2b;
+  --primary: #9f7cff;
+  --primary-foreground: #12092d;
+  --secondary: #1a1630;
+  --secondary-foreground: #f8f9ff;
+  --card: #0a0820;
+  --card-muted: #141230;
+  --ring: #9f7cff;
+  --accent: #00e0ff;
+  --accent-soft: rgba(0, 224, 255, 0.35);
+  --pixel-size: 3px;
+  --glow-start: rgba(159, 124, 255, 0.12);
+  --glow-end: rgba(0, 224, 255, 0.08);
+  --grid-color: rgba(159, 124, 255, 0.08);
+  --grain-color: rgba(255, 255, 255, 0.03);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-card: var(--card);
+  --color-card-muted: var(--card-muted);
   --color-ring: var(--ring);
+  --color-accent: var(--accent);
 
-  /* Calculator Theme */
-  --text-calculator: #ebebeb;
-  --text-secondary-calculator: #6b6b6b;
-  --primary-calculator: #462878;
-  --background-calculator: #2d2a37;
-
-  --gradient-calculator:
-    180deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%;
-
-  --gradient-hover-calculator:
-    180deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%;
-
-  --shadow-calculator:
-    0px 11px 7px 0px rgba(0, 0, 0, 0.01), 0px 7px 7px 0px rgba(0, 0, 0, 0.04),
-    0px 4px 6px 0px rgba(0, 0, 0, 0.1), 0px 2px 4px 0px rgba(0, 0, 0, 0.26),
-    0px 0px 2px 0px rgba(0, 0, 0, 0.29),
-    0px 2px 3px 0px rgba(255, 255, 255, 0.06) inset;
+  --drop-shadow-pixel:
+    0 var(--pixel-size) 0 var(--accent-soft),
+    calc(var(--pixel-size) * -1) calc(var(--pixel-size) * -1) 0
+      var(--accent-soft);
+  --drop-shadow-card: 0 20px 60px rgba(15, 10, 40, 0.45);
 
   --font-sans-calculator: 'Rubik', sans-serif;
-
-  /* TodoList Theme */
-  --color-white-todo: #ffffff;
-  --color-gray-100-todo: #f7f3f6;
-  --color-gray-200-todo: #f4e6f0;
-  --color-gray-300-todo: #7a6e76;
-  --color-gray-400-todo: #332e32;
-  --color-green-light-todo: #cddfcc;
-  --color-green-base-todo: #52a350;
-  --color-green-dark-todo: #2f5c2d;
-  --color-pink-light-todo: #e9cce1;
-  --color-pink-base-todo: #c257a4;
-  --color-pink-dark-todo: #884074;
   --font-sans-todo: 'Cairo', sans-serif;
-  --shadow-sm-todo: 0px 4px 8px 0px rgba (54, 23, 45, 0.05);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #fafafa;
-    --muted-foreground: #a1a1aa;
-    --border: #27272a;
-    --ring: #3b82f6;
+    --background: #f9f7ff;
+    --foreground: #0a051c;
+    --muted: #595d75;
+    --muted-foreground: #4d4f68;
+    --border: #d9d3ff;
+    --primary: #6c3cff;
+    --primary-foreground: #f8f9ff;
+    --secondary: #ffffff;
+    --secondary-foreground: #1d1237;
+    --card: #ffffff;
+    --card-muted: #f0ecff;
+    --ring: #6c3cff;
+    --accent: #00b4ff;
+    --accent-soft: rgba(0, 180, 255, 0.2);
+    --grid-color: rgba(108, 60, 255, 0.12);
+    --grain-color: rgba(0, 0, 0, 0.05);
   }
 }
 
 body {
-  background: var(--background);
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 0%, var(--glow-start), transparent 50%),
+    radial-gradient(circle at 90% 0%, var(--glow-end), transparent 55%),
+    var(--background);
   color: var(--foreground);
+  font-family: var(--font-sans-calculator);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(
+      90deg,
+      transparent 0,
+      transparent calc(var(--pixel-size) * 4),
+      var(--grid-color) calc(var(--pixel-size) * 4),
+      var(--grid-color) calc(var(--pixel-size) * 4 + 1px)
+    ),
+    linear-gradient(
+      0deg,
+      transparent 0,
+      transparent calc(var(--pixel-size) * 4),
+      var(--grid-color) calc(var(--pixel-size) * 4),
+      var(--grid-color) calc(var(--pixel-size) * 4 + 1px)
+    ),
+    radial-gradient(
+      circle at center,
+      transparent,
+      transparent 40%,
+      rgba(0, 0, 0, 0.55)
+    );
+  opacity: 0.3;
+  z-index: -1;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none"%3E%3Crect x="0" y="0" width="1" height="1" fill="rgba(255,255,255,0.05)"/%3E%3C/svg%3E');
+  mix-blend-mode: soft-light;
+  opacity: 0.18;
+  z-index: -1;
+}
+
+.skip-link {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  padding: 12px 18px;
+  border-radius: 9999px;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  z-index: 100;
+  transition: transform 0.2s ease-out;
+}
+
+.skip-link:focus {
+  transform: translate(-50%, 0);
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(159, 124, 255, 0.5);
 }

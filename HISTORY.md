@@ -4,6 +4,23 @@ Este arquivo mantém um registro de todas as mudanças relevantes do projeto.
 
 ## 2025-09-25
 
+### DOCS: feat(npm): update to use npm
+
+**Commit:** 58f6bbe | **Author:** leobrizolladev
+
+**Arquivos alterados:**
+
+- .gitignore
+- .prettierignore
+- README.md
+- package-lock.json
+- pnpm-lock.yaml
+- pnpm-workspace.yaml
+
+---
+
+## 2025-09-25
+
 ### FEAT: feat: add management of tasks with hooks and improvements in the interface
 
 **Commit:** f230fe2 | **Author:** leobrizolladev
