@@ -2,6 +2,49 @@
 
 Este arquivo mantém um registro de todas as mudanças relevantes do projeto.
 
+## 2025-09-30
+
+### TEST: feat(home): new home 🚀
+
+**Commit:** 4a08bef | **Author:** leobrizolladev
+
+**Arquivos alterados:**
+
+- AGENTS.md
+- package-lock.json
+- package.json
+- src/app/**tests**/page.test.tsx
+- src/app/globals.css
+- src/app/layout.tsx
+- src/app/opengraph-image.tsx
+- src/app/page.tsx
+- src/components/home/AboutSection.tsx
+- src/components/home/ContactSection.tsx
+- src/components/home/HeroSection.tsx
+- src/components/home/HomePage.tsx
+- src/components/home/ProjectCard.tsx
+- src/components/home/ProjectsSection.tsx
+- src/components/home/SchemaMarkup.tsx
+- src/components/home/SiteHeader.tsx
+- src/components/home/SkillsSection.tsx
+- src/components/home/**tests**/ProjectCard.test.tsx
+- src/components/home/**tests**/ProjectsSection.test.tsx
+- src/components/home/index.ts
+- src/core-components/metric/Metric.tsx
+- src/core-components/metric/index.ts
+- src/core-components/pixel-button/PixelButton.tsx
+- src/core-components/pixel-button/index.ts
+- src/core-components/section-heading/SectionHeading.tsx
+- src/core-components/section-heading/index.ts
+- src/core-components/tag/Tag.tsx
+- src/core-components/tag/index.ts
+- src/helpers/utils/index.ts
+- src/models/homepage.ts
+- src/models/project.ts
+- src/models/projects.ts
+
+---
+
 ## 2025-09-25
 
 ### DOCS: feat(npm): update to use npm
